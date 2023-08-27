@@ -13,6 +13,7 @@ Create RDS instance
 
 
 .............................
+
 notas provisorias
 
 rds sera chamado de base
@@ -108,8 +109,10 @@ mysql -h ENDPOINT -P 3306 -u admin -p
 create database NOME_DATABASE;
 
 ............
+
 outra documentação auxiliar
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
+
 ...........
 
 INSERIR OS ARQUIVOS DE FRONT E CONEXÃO COM O BANCO
