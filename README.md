@@ -167,4 +167,5 @@ sudo systemctl reload httpd.service (Force Apache Web Server to refresh configur
 .....
 
 por fim, destruir os recursos, ou seja a base e a máquina criadas
-e também os security groups da máquina e da RDS, vão ter nomes como launch-wizard-X e ec2-rds-X
+e também os security groups da máquina e da RDS, vão ter nomes como launch-wizard-X e ec2-rds-X (pra deletar, tem que tirar as rules de cada securiy group, que apontam para outra maquina)
+e eliminar também o key pair
