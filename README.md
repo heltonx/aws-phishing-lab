@@ -16,8 +16,8 @@ Create RDS instance
 
 provisory notes
 
-rds sera chamado de base
-máquina publica será chamada de machine
+rds will be called: 'base'
+public machine will be called: 'machine'
 
 Key pair name também vou chamar machine
 
