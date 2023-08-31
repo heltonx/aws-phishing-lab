@@ -71,8 +71,22 @@ https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebS
 
 a principio, usar tutorial acima, mas selecionar MariaDB
 adaptar o tutorial, deixar só o que precisa mesmo, pois tem muita coisa sobrando
+adaptações:
+Master admin: admin
+master password: admin123
 
-no diretorio /var/www criar o diretorio connect (que é o que vai se conectar na base RDS)
+no item 14: Abra a seção Additional configuration (Configuração adicional) e insira sample em Initial database name (Nome do banco de dados inicial). Mantenha as configurações padrão para as outras opções.
+não precisa fazer isso.
+
+moba connection:
+Session
+SSH
+REmote Host: put the IP
+username: ec2-user
+Use Private Key: upload the .pem you generated
+ok
+
+
 
 no tutorial acima na sessão "Conectar o servidor Web Apache à instância de banco de dados"
 pegar conteudo e colocar em um arquivo chamado dbinfo.connect (touch dbinfo.connect ou >dbinfo.connect) dentro de www/connect
@@ -95,7 +109,7 @@ CONECTAR INSTANCIA EC2 À BASE MARIADB
 fonte:
 https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
 
-sudo dnf install -y httpd php php-mysqli mariadb
+sudo yum install -y httpd php php-mysqli mariadb
 
 sudo systemctl start httpd
 
@@ -103,10 +117,26 @@ sudo systemctl enable httpd
 
 usar os comandos da sessão "Para definir as permissões de arquivos para o servidor na web Apache"
 
+no diretorio /var/www criar o diretorio connect (que é o que vai se conectar na base RDS)
+
 mysql -h ENDPOINT -P 3306 -u admin -p
 (in endpoint insert the endpoint, something like base.c1ucsq6uqdba.us-west-1.rds.amazonaws.com)
 
-create database NOME_DATABASE;
+create database VICTIM_DATABASE;
+
+
+put the connect file inside the ../connect folter
+the content is something like this:
+
+<?php
+
+define('DB_SERVER', 'VICTIM_DATABASE');
+define('DB_USERNAME', 'admin');
+define('DB_PASSWORD', 'admin123');
+define('DB_DATABASE', 'base1');
+
+?>
+
 
 ............
 
@@ -131,7 +161,7 @@ no index, no seguinte trecho colocar o nome do arquivo
 ...
 
 show databases;
-use NOME_DATABASE;
+use VICTIM_DATABASE;
 show tables;
 select * form VICTIM;
 
