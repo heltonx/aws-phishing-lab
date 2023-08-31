@@ -161,3 +161,9 @@ select * form VICTIM;
 https://cloudkatha.com/how-to-install-apache-web-server-on-amazon-linux-2/
 nesse link esse comando ajudou, quando minhas mudanças pareciam não surtir efeito no php:
 sudo systemctl reload httpd.service (Force Apache Web Server to refresh configuration files)
+
+
+
+.....
+
+por fim, destruir os recursos, ou seja a base e a máquina criadas
