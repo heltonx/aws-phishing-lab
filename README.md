@@ -138,6 +138,8 @@ define('DB_DATABASE', 'base1');
 ?>
 
 
+na rule da instancia, em inbound rules, liberar http anywhere ipv4
+
 ............
 
 outra documentação auxiliar
