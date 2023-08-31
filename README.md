@@ -128,15 +128,6 @@ create database VICTIM_DATABASE;
 put the connect file inside the ../connect folter
 the content is something like this:
 
-<?php
-
-define('DB_SERVER', 'VICTIM_DATABASE');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'admin123');
-define('DB_DATABASE', 'base1');
-
-?>
-
 
 na rule da instancia, em inbound rules, liberar http anywhere ipv4
 
