@@ -1,16 +1,16 @@
 # aws-phishing-lab
 Lab for test purposes, using a ec2 instance to a RDS database, simulating a a phishing attack. 
 
-Observação: esse documento terá considerações gerais, não regras minuciosas. Colocar os arquivos, como php, e também os links de apoio, mas deixar o mais organizado e otimizado possível.
-Esse manual inclusive servirá para mim também quando eu precisar lembrar.
+Observations:
+This document will have general considerations, not minucious rules.
+Put the files, like the php, and also the support links, but make it the most organizated and optimized as possible.
+Indeed, this tutorial will serve for myself, when I need to remember to use the tecnologies
 
 Create a EC2 t2.micro with AMI Linux image
 
-salvar o .pem (e informar que estou utilizando o moba para acesso, mas que pode utilizar qualquer um)
+save the .pem (I am using the moba for access, but you can utilize anyone tool for connect, like putty)
 
 Create RDS instance
-
-
 
 .............................
 
