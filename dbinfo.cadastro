@@ -1,0 +1,9 @@
+
+<?php
+
+define('DB_SERVER', 'base1.c1ucsq6uqdba.us-west-1.rds.amazonaws.com');
+define('DB_USERNAME', 'admin');
+define('DB_PASSWORD', 'admin123');
+define('DB_DATABASE', 'VICTIM_DATABASE');
+
+?>
