@@ -14,7 +14,7 @@ Create RDS instance
 
 .............................
 
-notas provisorias
+provisory notes
 
 rds sera chamado de base
 máquina publica será chamada de machine
