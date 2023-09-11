@@ -32,7 +32,7 @@ Amazon Linux 2023 AMI
 dá erro de Server refused our key
 Disconnected: No supported authentication methods available (server sent: publickey,gssapi-keyex,gssapi-with-mic)
 
-...........
+.............................
 
 configurações da instancia:
 
@@ -61,7 +61,7 @@ aba Advanced SSH setings:
 marcar user private Key > e nesse campo puxar onde está a .pem
 OK
 
-....................
+.............................
 
 
 CRIAR BANCO DE DADOS
@@ -131,12 +131,12 @@ the content is something like this:
 
 na rule da instancia, em inbound rules, liberar http anywhere ipv4
 
-............
+.............................
 
 outra documentação auxiliar
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
 
-...........
+.............................
 
 INSERIR OS ARQUIVOS DE FRONT E CONEXÃO COM O BANCO
 
