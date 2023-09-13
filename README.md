@@ -136,16 +136,6 @@ mysql -h ENDPOINT -P 3306 -u admin -p
 (in endpoint insert the endpoint, something like base.c1ucsq6uqdba.us-west-1.rds.amazonaws.com)
 
 create database VICTIM_DATABASE;
-
-.............................
-
-outra documentação auxiliar
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
-
-.............................
-
-
-
 show databases;
 use VICTIM_DATABASE;
 show tables;
@@ -155,7 +145,12 @@ https://cloudkatha.com/how-to-install-apache-web-server-on-amazon-linux-2/
 nesse link esse comando ajudou, quando minhas mudanças pareciam não surtir efeito no php:
 sudo systemctl reload httpd.service (Force Apache Web Server to refresh configuration files)
 
+.............................
 
+outra documentação auxiliar
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
+
+.............................
 
 .....
 
