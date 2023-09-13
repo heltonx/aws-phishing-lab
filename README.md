@@ -109,29 +109,12 @@ usar os comandos da sessão "Para definir as permissões de arquivos para o serv
 
 no diretorio /var/www criar o diretorio connect (que é o que vai se conectar na base RDS)
 
-mysql -h ENDPOINT -P 3306 -u admin -p
-(in endpoint insert the endpoint, something like base.c1ucsq6uqdba.us-west-1.rds.amazonaws.com)
-
-create database VICTIM_DATABASE;
-
-
-put the connect file inside the ../connect folter
-the content is something like this:
-
-
-na rule da instancia, em inbound rules, liberar http anywhere ipv4
-
-.............................
-
-outra documentação auxiliar
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
-
-.............................
+...........
 
 INSERIR OS ARQUIVOS DE FRONT E CONEXÃO COM O BANCO
 
 
-no diretorio /var/www/html inserir o arquivo index.php, que no caso agora é o loguin.php.
+no diretorio /var/www/html inserir o arquivo index.php, que no caso agora é o index.php.
 
 
 no index, no seguinte trecho colocar o nome do arquivo
@@ -142,6 +125,25 @@ no index, no seguinte trecho colocar o nome do arquivo
 
 <?php
 ...
+
+put the connect file inside the ../connect folter
+
+na rule da instancia, em inbound rules, liberar http anywhere ipv4
+
+..........
+mysql -h ENDPOINT -P 3306 -u admin -p
+(in endpoint insert the endpoint, something like base.c1ucsq6uqdba.us-west-1.rds.amazonaws.com)
+
+create database VICTIM_DATABASE;
+
+.............................
+
+outra documentação auxiliar
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
+
+.............................
+
+
 
 show databases;
 use VICTIM_DATABASE;
