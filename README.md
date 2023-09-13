@@ -69,7 +69,9 @@ CRIAR BANCO DE DADOS
 fonte:
 https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateDBInstance.html
 
-a principio, usar tutorial acima, mas selecionar MariaDB
+At principle, use tutorial above 
+But in "6. Engine Options", select MariaDB instead MySQL.
+
 adaptar o tutorial, deixar só o que precisa mesmo, pois tem muita coisa sobrando
 adaptações:
 Master admin: admin
