@@ -21,7 +21,7 @@ a base tarrafa criei acessando o rds através do ec2 (mysql -h dumbase2.c1ucsq6u
 customizações que fiz no php da aws:
 -coloquei o php na segunda tag div;
 -substituí tudo (respeitando o que é maiúsculo do que é minúscolo, e nos comentários, nomes de variáveis, que começavam com letra maíscula, e plurais): name por email, address por password, employee(s) por victim;
--no php include, adaptei para "../cadastro/dbinfo.cadastro"
+-no php include, adaptei para "../register/dbinfo.register"
 -no form template do facebook, nas tags input incluí os parâmetros name="EMAIL" e name="PASSWORD";
 -removi o form que veio dentro, já que o form template do facebook (que está na primeira div) já provê isso;
 -também removi os tr e o select que mostrava na página os dados cadastrados;
@@ -115,7 +115,7 @@ body {
 
 <div>
 
-<?php include "../cadastro/dbinfo.cadastro"; ?>
+<?php include "../register/dbinfo.register"; ?>
 
 <?php
 
