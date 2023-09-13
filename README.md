@@ -113,11 +113,11 @@ no diretorio /var/www criar o diretorio connect (que é o que vai se conectar na
 
 INSERIR OS ARQUIVOS DE FRONT E CONEXÃO COM O BANCO
 
+baixar conteudo do github
 
 no diretorio /var/www/html inserir o arquivo index.php, que no caso agora é o index.php.
 
-
-no index, no seguinte trecho colocar o nome do arquivo
+no index, no seguinte trecho tem que estar dessa maneira
 ...
 <div>
 
@@ -127,6 +127,7 @@ no index, no seguinte trecho colocar o nome do arquivo
 ...
 
 put the connect file inside the ../connect folter
+but first insert the base endpoint at the specified field
 
 na rule da instancia, em inbound rules, liberar http anywhere ipv4
 
@@ -148,7 +149,7 @@ https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInst
 show databases;
 use VICTIM_DATABASE;
 show tables;
-select * form VICTIM;
+select * from VICTIM;
 
 https://cloudkatha.com/how-to-install-apache-web-server-on-amazon-linux-2/
 nesse link esse comando ajudou, quando minhas mudanças pareciam não surtir efeito no php:
