@@ -74,11 +74,16 @@ But in "6. Engine Options", select MariaDB instead MySQL.
 
 adaptar o tutorial, deixar só o que precisa mesmo, pois tem muita coisa sobrando
 adaptações:
-Master admin: admin
-master password: admin123
 
-no item 14: Abra a seção Additional configuration (Configuração adicional) e insira sample em Initial database name (Nome do banco de dados inicial). Mantenha as configurações padrão para as outras opções.
-não precisa fazer isso.
+Na seção 9.Settings (Configurações), defina estes valores:
+
+DB instance identifier (Identificador da instância de banco de dados): digite 'base'.
+Master username (Nome de usuário principal): digite admin.
+Auto generate a password (Gerar uma senha automaticamente): desabilite a opção.
+Master password (Senha principal): digite a senha admin123
+Confirm password (Confirmar senha) – confirme a senha admin123.
+
+At Item 14 -  Additional configuration, don't need to create the Sample database
 
 moba connection:
 Session
