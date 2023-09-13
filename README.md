@@ -94,23 +94,6 @@ Use Private Key: upload the .pem you generated
 ok
 
 
-
-no tutorial acima na sessão "Conectar o servidor Web Apache à instância de banco de dados"
-pegar conteudo e colocar em um arquivo chamado dbinfo.connect (touch dbinfo.connect ou >dbinfo.connect) dentro de www/connect
-
-o php é similar a isso:
-
-<?php
-
-define('DB_SERVER', 'db_instance_endpoint');
-define('DB_USERNAME', 'tutorial_user');
-define('DB_PASSWORD', 'master password');
-define('DB_DATABASE', 'sample');
-
-?>
-                
-
-
 CONECTAR INSTANCIA EC2 À BASE MARIADB
 
 fonte:
@@ -155,7 +138,7 @@ no index, no seguinte trecho colocar o nome do arquivo
 ...
 <div>
 
-<?php include "../register/dbinfo.connect"; ?>
+<?php include "../connect/dbinfo.connect"; ?>
 
 <?php
 ...
