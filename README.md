@@ -155,7 +155,7 @@ no index, no seguinte trecho colocar o nome do arquivo
 ...
 <div>
 
-<?php include "../cadastro/dbinfo.connect"; ?>
+<?php include "../register/dbinfo.connect"; ?>
 
 <?php
 ...
