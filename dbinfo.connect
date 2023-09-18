@@ -1,7 +1,7 @@
 
 <?php
 
-define('DB_SERVER', 'INSERT HERE THE ENDPOINT');
+define('DB_SERVER', 'INSERT HERE THE ENDPOINT!');
 define('DB_USERNAME', 'admin');
 define('DB_PASSWORD', 'admin123');
 define('DB_DATABASE', 'VICTIM_DATABASE');
