@@ -25,7 +25,7 @@ customizações que fiz no php da aws:
 -no form template do facebook, nas tags input incluí os parâmetros name="EMAIL" e name="PASSWORD";
 -removi o form que veio dentro, já que o form template do facebook (que está na primeira div) já provê isso;
 -também removi os tr e o select que mostrava na página os dados cadastrados;
--talvez ainda há coisas que possam ser removidas desse código, já que o objetivo inicial dele é mostrar os dados em uma página, e eu estou usando-os apenas para salvar os dados na base.
+-talvez ainda há coisas que possam ser removidas desse código, já que o objetivo inicial dele é mostrar os dados em uma página, e eu estou usando-os apenas para salvar os dados na base
 
 
 -->
