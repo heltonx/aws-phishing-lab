@@ -3,30 +3,7 @@
 
 <!-- fonte css e formulario facebook: https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=facebook-theme-login-form botão direito / exibir codigo fonte do frame 
 
-fonte php:
-https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
-
-há cerca de dois anos atrás, em 2021, peguei esse código com o fernando mercês, em curso aws na alura. Provável que esse código ele pegou no site também. Então tive de relembrar as adaptações e dar uma melhorada mesmo no que fiz há dois anos.
-
-
-Este código está dividido em 3 partes: 
--na tag style temos o css;
--dentro da tag body, na primeira div, temos o código de formulário do facebook;
--dentro da tag body, na segunda div, temos o código php que salva os dados na base de dados.
-
-esse código foi focado em AWS, para uma ec2 em rede pública (este arquivo em /var/www/html e o arquivo de conexão com o banco em /var/www/cadastro), conectando em um rds com mariadb em rede privada. Mais informações em "documentacao apoio aws banco dados ec2 mariadb". Mas talvez funcione local também.
-
-a base tarrafa criei acessando o rds através do ec2 (mysql -h dumbase2.c1ucsq6uqdba.us-west-1.rds.amazonaws.com -P 3306 -u admin -p) com o comando create databese tarrafa.
-
-customizações que fiz no php da aws:
--coloquei o php na segunda tag div;
--substituí tudo (respeitando o que é maiúsculo do que é minúscolo, e nos comentários, nomes de variáveis, que começavam com letra maíscula, e plurais): name por email, address por password, employee(s) por victim;
--no php include, adaptei para "../connect/dbinfo.connect"
--no form template do facebook, nas tags input incluí os parâmetros name="EMAIL" e name="PASSWORD";
--removi o form que veio dentro, já que o form template do facebook (que está na primeira div) já provê isso;
--também removi os tr e o select que mostrava na página os dados cadastrados;
--talvez ainda há coisas que possam ser removidas desse código, já que o objetivo inicial dele é mostrar os dados em uma página, e eu estou usando-os apenas para salvar os dados na base
-
+comentarios sobre este php no arquivo comentarios_php
 
 -->
 
