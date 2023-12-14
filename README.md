@@ -147,7 +147,7 @@ sudo systemctl reload httpd.service (Force Apache Web Server to refresh configur
 
 .............................
 
-other support documentation
+other auxiliar documentation
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToMariaDBInstance.html
 
 .............................
