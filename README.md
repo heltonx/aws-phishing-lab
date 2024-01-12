@@ -23,13 +23,13 @@ Key pair name também vou chamar machine
 
 Security group name machine
 
-escolher uma subnet publica
+choose a public subnet
 
-escolher a imagem
+choose a image
 Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
 pois a
 Amazon Linux 2023 AMI
-dá erro de Server refused our key
+an error will be shown: Server refused our key
 Disconnected: No supported authentication methods available (server sent: publickey,gssapi-keyex,gssapi-with-mic)
 
 .............................
